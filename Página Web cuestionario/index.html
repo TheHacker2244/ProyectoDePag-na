@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Como cuidar el medio ambiente</h1>
+    <p>Juego depreguntas</p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1- ¿Cúando Se creo el plastico?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onchange="respuesta(0, this)">1914
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onchange="respuesta(0, this)">1945
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onchange="respuesta(0, this)">1941
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onchange="respuesta(0, this)">1814
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2- ¿Cúal es el origen del plastico?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onchange="respuesta(1, this)">1940
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onchange="respuesta(1, this)">1914
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onchange="respuesta(1, this)">1945 
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onchange="respuesta(1, this)">1844
+            </label>
+        </section>
+     </section>
+     <section id="p2">
+        <h3>3- ¿Cúando comenzo la contaminación?</h3>
+        <label>
+            <input type="radio" value="1" name="p2" onchange="respuesta(2, this)">1940
+        </label>
+        <label>
+            <input type="radio" value="2" name="p2" onchange="respuesta(2, this)">1914
+        </label>
+        <label>
+            <input type="radio" value="3" name="p2" onchange="respuesta(2, this)">1945
+        </label>
+        <label>
+            <input type="radio" value="4" name="p2" onchange="respuesta(2, this)">1844
+        </label>
+            </section>
+            <section id="p3">
+                <h3>4- ¿En que año se volvio problema mundial?</h3>
+                <label>
+                    <input type="radio" value="1" name="p3" onchange="respuesta(3, this)">1940
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p3" onchange="respuesta(3, this)">1914
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p3" onchange="respuesta(3, this)">1945
+                </label>
+                <label>
+                    <input type="radio" value="4" name="p3" onchange="respuesta(3, this)">1844
+                </label>
+            </section>
+    <section id="p4">
+        <h3>5- ¿Cúantos años tarda en descomponerce el plastico?</h3>
+        <label>
+            <input type="radio" value="1" name="p4" onchange="respuesta(4, this)">1940
+        </label>
+        <label>
+            <input type="radio" value="2" name="p4" onchange="respuesta(4, this)">1914
+        </label>
+        <label>
+            <input type="radio" value="3" name="p4" onchange="respuesta(4, this)">1945 
+        </label>
+        <label>
+            <input type="radio" value="4" name="p4" onchange="respuesta(4, this)">1844
+        </label>
+    </section>
+</section>
+<section id="p5">
+    <h3>6- ¿Cual lugar de estos genera más contaminación?</h3>
+    <label>
+        <input type="radio" value="1" name="p5" onchange="respuesta(5, this)">San Salvador
+    </label>
+    <label>
+        <input type="radio" value="2" name="p5" onchange="(5, this)">Guatemala
+    </label>
+    <label>
+        <input type="radio" value="3" name="p5" onchange="respuesta(5, this)">Mexico
+    </label>
+    <label>
+        <input type="radio" value="4" name="p5">China
+    </label>
+    <button id="BotonCorregir">Corregir</button>
+    <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+</section>
+    </div>
+    <script src="Respuestas.js"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
