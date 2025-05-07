@@ -92,7 +92,7 @@ body{
 }
 /*Animation form*/
 
-.sing-up{
+.sign-up {
     transform: translateX(-100%);
 }
 .container.toggle .sign-in{
