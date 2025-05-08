@@ -1,0 +1,1 @@
+const words = ['Pato', 'capybara', 'cangrejo', 'Playa',]
