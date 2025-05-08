@@ -4,216 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
 <body>
     <header>
-    <h1>Como cuidar el medio ambiente</h1>
-    <p>Juego depreguntas</p>
+        <h1>Como cuidar el medio ambiente</h1>
+        <p>Juego de preguntas</p>
     </header>
+
     <div class="container">
         <section id="p0">
-            <h3>1- Nuestra ropa libera microplásticos llamados:
-            </h3>
+            <h3>1. Según el texto, ¿cuál es el único lugar que conocemos con vida?</h3>
             <label>
-                <input type="radio" value="1" name="p0" onchange="respuesta(0, this)">Micro fibras 
-
+                <input type="radio" value="1" name="p0" onchange="respuesta(0, this)"> La Tierra.
             </label>
             <label>
-                <input type="radio" value="2" name="p0" onchange="respuesta(0, this)">Micro perlas
-
+                <input type="radio" value="2" name="p0" onchange="respuesta(0, this)"> Marte.
             </label>
             <label>
-                <input type="radio" value="3" name="p0" onchange="respuesta(0, this)">Micro materiales 
-
+                <input type="radio" value="3" name="p0" onchange="respuesta(0, this)"> La Luna.
             </label>
             <label>
-                <input type="radio" value="4" name="p0" onchange="respuesta(0, this)">Micro cápsulas 
-
+                <input type="radio" value="4" name="p0" onchange="respuesta(0, this)"> Júpiter.
             </label>
         </section>
+
         <section id="p1">
-            <h3>2-¿Donde se encuentran estos microplasticos? 
-            </h3>
+            <h3>2. ¿Qué fenómeno ocurre gracias a que la Tierra gira alrededor del Sol?</h3>
             <label>
-                <input type="radio" value="1" name="p1" onchange="respuesta(1, this)">ríos y lagos urbanos
-
+                <input type="radio" value="1" name="p1" onchange="respuesta(1, this)"> Las mareas.
             </label>
             <label>
-                <input type="radio" value="2" name="p1" onchange="respuesta(1, this)">en áreas industriales
+                <input type="radio" value="2" name="p1" onchange="respuesta(1, this)"> Los terremotos.
             </label>
             <label>
-                <input type="radio" value="3" name="p1" onchange="respuesta(1, this)">Del Everest hasta las fosas oceánicas 
-
-            </label>
+                <input type="radio" value="3" name="p1" onchange="respuesta(1, this)"> El día, la noche y las estaciones.</label>
             <label>
-                <input type="radio" value="4" name="p1" onchange="respuesta(1, this)">en alimentos procesados 
-
+                <input type="radio" value="4" name="p1" onchange="respuesta(1, this)"> Las auroras boreales.
             </label>
         </section>
-     </section>
-     <section id="p2">
-        <h3>3-¿cuantas Micro fibras genera un ciclo de lavado?  </h3>
-        <label>
-            <input type="radio" value="1" name="p2" onchange="respuesta(2, this)">1.8 millones 
 
-        </label>
-        <label>
-            <input type="radio" value="2" name="p2" onchange="respuesta(2, this)"> ⁠180.000
+        <section id="p2">
+            <h3>3. El medio ambiente incluye todo lo que nos rodea, ¿qué elementos se mencionan específicamente en el texto?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onchange="respuesta(2, this)"> Solo plantas y animales.</label>
+            <label>
+                <input type="radio" value="2" name="p2" onchange="respuesta(2, this)"> Únicamente agua y aire.</label>
+            <label>
+                <input type="radio" value="3" name="p2" onchange="respuesta(2, this)"> Ciudades y edificios.</label>
+            <label>
+                <input type="radio" value="4" name="p2" onchange="respuesta(2, this)"> Aire, agua, suelo, plantas, animales y personas.</label>
+        </section>
 
-        </label>
-        <label>
-            <input type="radio" value="3" name="p2" onchange="respuesta(2, this)">⁠50 millones 
+        <section id="p3">
+            <h3>4. ¿Por qué es vital cuidar el medio ambiente según el texto?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onchange="respuesta(3, this)"> Para tener paisajes bonitos.</label>
+            <label>
+                <input type="radio" value="2" name="p3" onchange="respuesta(3, this)"> Para construir más casas.</label>
+            <label>
+                <input type="radio" value="3" name="p3" onchange="respuesta(3, this)"> Para extraer más recursos.</label>
+            <label>
+                <input type="radio" value="4" name="p3" onchange="respuesta(3, this)"> Para mantener el equilibrio de los ecosistemas.</label>
+        </section>
 
-        </label>
-        <label>
-            <input type="radio" value="4" name="p2" onchange="respuesta(2, this)">18 millones 
+        <section id="p4">
+            <h3>5. ¿Qué nos proporciona el medio ambiente que necesitamos para vivir?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onchange="respuesta(4, this)"> Dinero y tecnología avanzada.</label>
+            <label>
+                <input type="radio" value="2" name="p4" onchange="respuesta(4, this)"> Aire limpio, agua potable, alimentos, materias primas y energía.</label>
+            <label>
+                <input type="radio" value="3" name="p4" onchange="respuesta(4, this)"> Coches y teléfonos móviles.</label>
+            <label>
+                <input type="radio" value="4" name="p4" onchange="respuesta(4, this)"> Solo espacios para relajarnos.</label>
+        </section>
 
-        </label>
+        <section id="p5">
+            <h3>6. Según el texto, ¿qué ayuda a mantener el clima estable, absorben dióxido de carbono y liberan oxígeno?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onchange="respuesta(5, this)"> Las fábricas.</label>
+            <label>
+                <input type="radio" value="2" name="p5" onchange="respuesta(5, this)"> Los bosques, los océanos y la atmósfera.</label>
+            <label>
+                <input type="radio" value="3" name="p5" onchange="respuesta(5, this)"> Los volcanes.</label>
+            <label>
+                <input type="radio" value="4" name="p5" onchange="respuesta(5, this)"> Las ciudades.</label>
+        </section>
+
+        <section id="p6">
+            <h3>7. ¿Qué es la biodiversidad según la descripción del texto?</h3>
+            <label>
+                <input type="radio" value="1" name="p6" onchange="respuesta(6, this)"> La variedad de climas en la Tierra.</label>
+            <label>
+                <input type="radio" value="2" name="p6" onchange="respuesta(6, this)"> La asombrosa variedad de vida en el planeta.</label>
+            <label>
+                <input type="radio" value="3" name="p6" onchange="respuesta(6, this)"> La cantidad de países en el mundo.</label>
+            <label>
+                <input type="radio" value="4" name="p6" onchange="respuesta(6, this)"> Los diferentes tipos de rocas.</label>
+        </section>
+
+        <section id="p7">
+            <h3>8. ¿Qué nos proporciona la biodiversidad según el texto?</h3>
+            <label>
+                <input type="radio" value="1" name="p7" onchange="respuesta(7, this)"> Alimentos, medicinas y otros recursos vitales.</label>
+            <label>
+                <input type="radio" value="2" name="p7" onchange="respuesta(7, this)"> Únicamente paisajes bonitos.</label>
+            <label>
+                <input type="radio" value="3" name="p7" onchange="respuesta(7, this)"> Energía nuclear.</label>
+            <label>
+                <input type="radio" value="4" name="p7" onchange="respuesta(7, this)"> Materiales para la construcción.</label>
             </section>
-            <section id="p3">
-                <h3>4-¿El porcentaje de plástico que se produce en día de “un solo uso”?
-                </h3>
-                <label>
-                    <input type="radio" value="1" name="p3" onchange="respuesta(3, this)">10%
-                </label>
-                <label>
-                    <input type="radio" value="2" name="p3" onchange="respuesta(3, this)">20%
-                </label>
-                <label>
-                    <input type="radio" value="3" name="p3" onchange="respuesta(3, this)">15%
-                </label>
-                <label>
-                    <input type="radio" value="4" name="p3" onchange="respuesta(3, this)">50%
-                </label>
+
+        <section id="p8">
+            <h3>9. ¿Cómo afecta el contacto con entornos naturales a nuestro bienestar según el texto?</h3>
+            <label>
+                <input type="radio" value="1" name="p8" onchange="respuesta(8, this)"> Aumenta el estrés.</label>
+            <label>
+                <input type="radio" value="2" name="p8" onchange="respuesta(8, this)"> Reduce el estrés y mejora nuestro estado de ánimo.</label>
+            <label>
+                <input type="radio" value="3" name="p8" onchange="respuesta(8, this)"> No tiene ningún efecto.</label>
+            <label>
+                <input type="radio" value="4" name="p8" onchange="respuesta(8, this)"> Causa problemas de salud.</label>
             </section>
-    <section id="p4">
-        <h3>5-¿Cuantos millones de toneladas de plástico llega al océano cada año? 
-        </h3>
-        <label>
-            <input type="radio" value="1" name="p4" onchange="respuesta(4, this)">15
-        </label>
-        <label>
-            <input type="radio" value="2" name="p4" onchange="respuesta(4, this)">11
-        </label>
-        <label>
-            <input type="radio" value="3" name="p4" onchange="respuesta(4, this)">18
-        </label>
-        <label>
-            <input type="radio" value="4" name="p4" onchange="respuesta(4, this)">20
-        </label>
-    </section>
-</section>
-<section id="p5">
-    <h3>6-¿Cúal no forma parte de las 3R?
-    </h3>
-    <label>
-        <input type="radio" value="1" name="p5" onchange="respuesta(5, this)">reciclar
-    </label>
-    <label>
-        <input type="radio" value="2" name="p5" onchange="(5, this)">reparar
-    </label>
-    <label>
-        <input type="radio" value="3" name="p5" onchange="respuesta(5, this)">reducir
-    </label>
-    <label>
-        <input type="radio" value="4" name="p5">reutilizar
-    </label>
-</section>
 
-<section id="p6">
-    <h3>7- ¿Que significa “reciclar” según el texto?</h3>
-    <label>
-        <input type="radio" value="1" name="p6" onchange="respuesta(5, this)">separar nuestra basura Segun tipo de material 
+        <section id="p9">
+            <h3>10. ¿Cuál de estas NO es una pequeña acción diaria mencionada que ayuda a conservar el medio ambiente?</h3>
+            <label>
+                <input type="radio" value="1" name="p9" onchange="respuesta(9, this)"> Reciclar.</label>
+            <label>
+                <input type="radio" value="2" name="p9" onchange="respuesta(9, this)"> Plantar árboles.</label>
+            <label>
+                <input type="radio" value="3" name="p9" onchange="respuesta(9, this)"> Ahorrar agua.</label>
+            <label>
+                <input type="radio" value="4" name="p9" onchange="respuesta(9, this)"> Usar más plástico desechable.</label>
+            </section>
 
-    </label>
-    <label>
-        <input type="radio" value="2" name="p6" onchange="(5, this)">disminuir consumo 
-
-    </label>
-    <label>
-        <input type="radio" value="3" name="p6" onchange="respuesta(5, this)">rear nuevos productos con residuos 
-
-    </label>
-    <label>
-        <input type="radio" value="4" name="p6">incrementar uso de productos 
-
-    </label>
-    
-</section>
-
-<section id="p7">
-    <h3>8- ¿Energías renovables denominadas tambien? 
-    </h3>
-    <label>
-        <input type="radio" value="1" name="p7" onchange="respuesta(5, this)"> Energías fósiles 
-
-
-    </label>
-    <label>
-        <input type="radio" value="2" name="p7" onchange="(5, this)">⁠Energías limpias
-
-
-    </label>
-    <label>
-        <input type="radio" value="3" name="p7" onchange="respuesta(5, this)">⁠Energías contaminantes 
-
-
-    </label>
-    <label>
-        <input type="radio" value="4" name="p7">energías nucleares 
-
-
-    </label>
-    
-</section>
-
-
-<section id="p8">
-    <h3>9-¿Día mundial del medio ambiente? 
-    </h3>
-    <label>
-        <input type="radio" value="1" name="p8" onchange="respuesta(5, this)">22 de junio
-    </label>
-
-    <label>
-        <input type="radio" value="2" name="p8" onchange="(5, this)">10 de octubre 
-    </label>
-
-    <label>
-        <input type="radio" value="3" name="p8" onchange="respuesta(5, this)">1 de diciembre
-    </label>
-
-    <label>
-        <input type="radio" value="4" name="p8">5 de junio
-    </label>
-    
-</section>
-
-<section id="p9">
-    <h3>10-¿Que objetivo tiene ese día? </h3>
-    <label>
-        <input type="radio" value="1" name="p9" onchange="respuesta(5, this)">recaudar fondos para reforestación mundial
-
-    </label>
-    <label>
-        <input type="radio" value="2" name="p9" onchange="(5, this)">celebrar eventos deportivos 
-
-    </label>
-    <label>
-        <input type="radio" value="3" name="p9" onchange="respuesta(5, this)">fomentar uso de combustible fósiles 
-
-    </label>
-    <label>
-        <input type="radio" value="4" name="p9">⁠concientizar importancia de la naturaleza 
-
-    </label>
-    <button id="BotonCorregir">Corregir</button>
-    <h2>Cantidad acertadas: <span id="resultado"></span></h2>
-</section>
-
-
+        <button id="BotonCorregir">Corregir</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
     </div>
+
     <script src="Respuestas.js"></script>
     <script src="scrip.js"></script>
 </body>
