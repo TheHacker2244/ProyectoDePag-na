@@ -1,0 +1,23 @@
+/* Estilo para los cuadros */
+.cuadro-informacion {
+    border: 1px solid #ccc; /* Borde gris de 1px */
+    padding: 15px; /* Espacio interno dentro del cuadro */
+    margin-bottom: 20px; /* Margen debajo de cada cuadro para separarlos */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #f9f9f9; /* Color de fondo ligero */
+}
+
+/* Estilo para un título dentro de cada cuadro */
+.cuadro-informacion h2 {
+    margin-top: 0; /* Elimina el margen superior del título si lo hay */
+    color: #333; /* Color del texto del título */
+}
+
+/* Estilo adicional para las imágenes dentro de los cuadros */
+.cuadro-informacion img {
+    max-width: 100%; /* Asegura que la imagen no se salga del cuadro */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+    border-radius: 4px; /* Ligeras esquinas redondeadas para las imágenes */
+}

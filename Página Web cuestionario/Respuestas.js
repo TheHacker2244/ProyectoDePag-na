@@ -1,1 +1,1 @@
-const RESPUESTAS_CORRECTAS = ["1", "3", "2", "4", "1", "1"]; 
+const RESPUESTAS_CORRECTAS = ["1", "3", "4", "4", "2", "2", "2", "1", "2","4", "4"  ]; 
